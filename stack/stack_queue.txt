@@ -1,0 +1,13 @@
+The primary difference between a stack and a queue lies in their order of data access: stack follows a Last In, First Out (LIFO) principle, while a queue adheres to a First In, First Out (FIFO) principle. In a stack, the most recently added item is the first to be removed, whereas in a queue, the first item added is the first to be removed.
+
+
+Stack (LIFO)
+Insertion and Deletion: Both insertion (push) and deletion (pop) operations occur at the same end, called the "top". 
+Order: The last element added to the stack is the first one removed, hence the LIFO principle. 
+Examples: Function call stack, undo/redo operations. 
+
+
+Queue (FIFO)
+Insertion and Deletion: Insertion (enqueue) occurs at the "rear" end, and deletion (dequeue) occurs at the "front" end. 
+Order: The first element added to the queue is the first one removed, adhering to the FIFO principle. 
+Examples: Printer spooling, managing requests in a web server. 
