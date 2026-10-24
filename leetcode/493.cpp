@@ -1,6 +1,7 @@
-class Solution {
-public:
-    using ll = long long;
+#include<bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
     void update(vector<ll> &tree,ll l,ll r,ll val,ll ind)
     {
         if(l == r)
@@ -31,10 +32,15 @@ public:
         return left + right;
     }
 
-
-    int reversePairs(vector<int>& nums) {
+int main()
+{
+        ll n;
+        cin>>n;
+        vector<ll> nums(n);
         ll n = nums.size();
-        vector<int> vals = nums;
+        for(ll i = 0 ; i < n; i++)
+        cin>>nums[i];
+        vector<ll> vals = nums;
         vector<ll> temp;
         sort(vals.begin(),vals.end());
         temp.push_back(vals[0]);
@@ -62,6 +68,5 @@ public:
             ll f = itr - temp.begin();
             update(tree,0,m-1,f,0);
         }
-        return ans;
-    }
-};
+        cout<<ans<<"\n";
+}
